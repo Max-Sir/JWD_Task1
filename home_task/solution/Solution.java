@@ -17,10 +17,10 @@ public class Solution {                                                     //1
         return monthStart.getActualMaximum(Calendar.DAY_OF_MONTH);
     }
 
-    public static double squares(double S1)                                   //3
+    public static double squares(double s1)                                   //3
     {
-        double S2 = S1 / 2;
-        return S2;
+        double s2 = s1 / 2;
+        return s2;
     }
 
     public static boolean checkCondition(int[] k)                             //4
@@ -53,20 +53,20 @@ public class Solution {                                                     //1
         return sum == x;
     }
 
-    public static void hh_mm_ssDateFormatter(int n_th_second)                   //6
+    public static void hhMMSSDateFormatter(int nthSecond)                       //6
     {
-        System.out.println(LocalTime.ofSecondOfDay(n_th_second));
+        System.out.println(LocalTime.ofSecondOfDay(nthSecond));
     }
 
     public static void closestPoint2D(double x1, double y1, double x2, double y2)//7
     {
-        var magic_string = " point with coordinates: ";
+        var magicString = " point with coordinates: ";
 
         System.out.println("The closest to (0,0) point is: "
 
                 + ((Point2D.distance(x1, y1, 0, 0) < Point2D.distance(x2, y2, 0, 0)) ?
 
-                "1st" + magic_string + String.format("(%.3f , %.3f)", x1, y1) : "2nd" + magic_string +
+                "1st" + magicString + String.format("(%.3f , %.3f)", x1, y1) : "2nd" + magicString +
 
                 String.format("(%.3f , %.3f)", x2, y2)));
     }
